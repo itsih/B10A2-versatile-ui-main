@@ -212,13 +212,12 @@ nav{
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
-    border: 1px solid red;
+    margin-bottom: 100px;
 }
 .habit-title{
     width:872.43px;
     height: 159.6px;
     text-align: center;
-    border: 1px solid red;
 
 }
 .habit-title h1{
@@ -240,10 +239,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: end;
-    border: 1px solid red;
 }
 .to-do >div{
-    border: 1px solid red;
     width: 307.23px;
     height: 364.42px;
     text-align: center;
@@ -266,4 +263,61 @@ nav{
     font-family: Inter;
     font-size: 18.62px;
     font-weight: 400;
+}
+/* mile section */
+.mile-container{
+    margin: 0 auto;
+    width: 80%;
+    height: 493.43px;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+.mile-description{
+    width: 589.1px;
+    height: 385.7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    position: absolute;
+    left: 80px;
+}
+.mile-description h1{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 63.84px;
+    font-weight: 900;
+}
+.mile-description p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 18.62px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 30px;
+    margin-top: -10px;
+}
+.mile-description button{
+    width: 297.92px;
+    height: 71.82px;
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+}
+.mile-img>img{
+    position: absolute;
+    width: 486.78px;
+    height: 414.96px;
+    border-radius: 18px;
+    top: 43px;
+    right: 43px;
 }
