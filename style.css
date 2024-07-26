@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: inter;
+}
+
+/* Header Section */
+header{
+    width: auto;
+    height: 951px;
+    background: linear-gradient(0deg, rgb(0, 0, 0),rgba(124, 124, 124, 0.34) 100%);
+    border: 2px solid black;
+}
+/* Nav-Bar */
+nav{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 57px;
+    /* border: 2px solid wheat; */
+}
+.nav-logo{
+    font-size: 47.88px;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+}
+.nav-opt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    padding-right: 25px;
+    gap: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    box-sizing: border-box;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    height: 60px;
+}
+.home{
+    width: 123px;
+    height: 51px;
+    font-weight: 600;
+    padding: 10.64px 26.6px 10.64px 26.6px;
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    margin-left: 3.5px;
+}
+
+/* Hero-section */
+.hero-container{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-txt{
+    width: 691.6px;
+    height: 585.2px;
+}
+.hero-txt h1{
+    font-family: Inter;
+    font-size: 103px;
+    font-weight: 900;
+    line-height: 120%;
+    text-align: left;
+    margin-bottom: 28px;
+}
+.shape{
+    font-family: 'Miama', sans-serif;
+    font-size: 203px;
+    font-weight: 400;
+}
+.hero-txt p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 21.28px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 28px;
+}
+/* hero butons */
+.join{
+    width: 297.92px;
+    height: 71.82px;
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+}
+.download{
+        width: 297.92px;
+        height: 71.82px;
+        padding: 16px 40px 16px 40px;
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        box-sizing: border-box;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 42px;
+        background-color: transparent;
+
+}
+
+/* hero-img */
+.hero-img{
+    background-image: url(images/Images\ 2.png);
+    background-size: cover;
+    width: 464.17px;
+    height: 771.4px;
+    position: relative;
+}
+.vdo-tutorial{
+    width:273.98px;
+    height: 127.68px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    background: rgba(48, 48, 48, 0.54);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 550px;
+    left: -150px;
+}
+.circle-play{
+    font-size: 50px;
+    color: rgb(230, 83, 60);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.vdo-description{
+    width: 143.64px;
+    height: 74.48px;
+    text-align: left;
+}
+.watch-count{
+    color: rgb(250, 250, 249);
+    font-family: Inter;
+    font-size: 31.92px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.tutorial{
+    color: rgba(239, 237, 232, 0.65);
+    font-family: Inter;
+    font-size: 21.28px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.workout-vdo{
+    /* width:246.69px; */
+    height: 130.34px;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    text-align: left;
+    padding: 0px 30px;
+    position: absolute;
+    top: 165px;
+    right: -90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px;
+}
+.watch-count-2{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 53px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 2px;
+}
+.workout-video{
+    color: rgba(255, 255, 255, 0.65);
+    font-family: Inter;
+    font-size: 17.29px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+/* Habit section */
+.habit-container{
+    width: 1044px;
+    height: 452px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
