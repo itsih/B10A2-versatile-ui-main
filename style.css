@@ -64,6 +64,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .hero-txt{
     width: 691.6px;
@@ -119,11 +120,12 @@ nav{
 
 /* hero-img */
 .hero-img{
-    background-image: url(images/Images\ 2.png);
+    background-image:linear-gradient(0deg,black,transparent 10%), url(images/Images\ 2.png);
     background-size: cover;
     width: 464.17px;
     height: 771.4px;
     position: relative;
+    left: -60px;
 }
 .vdo-tutorial{
     width:273.98px;
@@ -203,10 +205,65 @@ nav{
 
 /* Habit section */
 .habit-container{
-    width: 1044px;
-    height: 452px;
+    margin: 0 auto;
+    width: 80%;
+    height: 601.16px;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
+    border: 1px solid red;
+}
+.habit-title{
+    width:872.43px;
+    height: 159.6px;
+    text-align: center;
+    border: 1px solid red;
+
+}
+.habit-title h1{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 63.84px;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+.habit-title p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 18.62px;
+    font-weight: 400;
+}
+.to-do{
+    width: 100%;
+    height: 364.42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border: 1px solid red;
+}
+.to-do >div{
+    border: 1px solid red;
+    width: 307.23px;
+    height: 364.42px;
+    text-align: center;
+}
+.to-do>div>img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+.to-do>div>h1{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.to-do>div>p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 18.62px;
+    font-weight: 400;
 }
