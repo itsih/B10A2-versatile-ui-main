@@ -14,10 +14,11 @@ body{
 
 /* Header Section */
 header{
-    max-width: auto;
-    height: 951px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
     background: linear-gradient(0deg, rgb(0, 0, 0),rgba(124, 124, 124, 0.34) 100%);
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
 }
 /* Nav-Bar */
 nav{
@@ -27,12 +28,13 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin-top: 57px;
-    /* border: 2px solid wheat; */
+    margin-bottom: 32px;
 }
 .nav-logo{
-    font-size: 47.88px;
-    font-weight: 800;
+    font-size: 38.88px;
+    font-weight: 1200;
     color: rgb(230, 83, 60);
+    font-style: italic;
 }
 .nav-opt{
     display: flex;
@@ -40,7 +42,6 @@ nav{
     align-items: center;
     margin-right: 20px;
     padding-right: 25px;
-    /* gap: 40px; */
     font-size: 24px;
     font-weight: 400;
     box-sizing: border-box;
@@ -64,7 +65,9 @@ nav{
     background: rgb(230, 83, 60);
     margin-left: 3.5px;
 }
-
+.menu-icon{
+    display: none;
+}
 /* Hero-section */
 .hero-container{
     width: 80%;
@@ -75,7 +78,7 @@ nav{
     position: relative;
 }
 .hero-txt{
-    width: 691.6px;
+    max-width: 691.6px;
     height: 585.2px;
 }
 .hero-txt h1{
@@ -100,10 +103,14 @@ nav{
     margin-bottom: 28px;
 }
 /* hero butons */
+.hero-buttons{
+    display: flex;
+    gap: 14px;
+}
 .join{
-    width: 297.92px;
+    max-width: 297.92px;
     height: 71.82px;
-    padding: 16px 40px 16px 40px;
+    padding: 0px 40px 0px 40px;
     border-radius: 42px;
     background: rgb(230, 83, 60);
     color: rgb(255, 255, 255);
@@ -112,9 +119,9 @@ nav{
     font-weight: 600;
 }
 .download{
-        width: 297.92px;
+        max-width: 297.92px;
         height: 71.82px;
-        padding: 16px 40px 16px 40px;
+        padding: 0px 40px 0px 40px;
         color: rgb(255, 255, 255);
         font-family: Inter;
         font-size: 24px;
@@ -136,8 +143,7 @@ nav{
     left: -60px;
 }
 .vdo-tutorial{
-    width:273.98px;
-    height: 127.68px;
+    padding: 20px 23px;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -158,8 +164,6 @@ nav{
     margin-right: 10px;
 }
 .vdo-description{
-    width: 143.64px;
-    height: 74.48px;
     text-align: left;
 }
 .watch-count{
@@ -167,7 +171,7 @@ nav{
     font-family: Inter;
     font-size: 31.92px;
     font-weight: 900;
-    margin-bottom: 20px;
+    display: block;
 }
 .tutorial{
     color: rgba(239, 237, 232, 0.65);
@@ -175,23 +179,21 @@ nav{
     font-size: 21.28px;
     font-weight: 400;
     line-height: 24px;
+    display: block;
+    margin-top: 5px;
 }
 .workout-vdo{
-    /* width:246.69px; */
-    height: 130.34px;
+    height: auto;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.1);
     text-align: left;
-    padding: 0px 30px;
+    padding: 26px 30px;
     position: absolute;
     top: 165px;
     right: -90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     gap: 1px;
 }
 .watch-count-2{
@@ -201,6 +203,7 @@ nav{
     font-weight: 900;
     line-height: 40px;
     letter-spacing: 2px;
+    display: block;
 }
 .workout-video{
     color: rgba(255, 255, 255, 0.65);
@@ -209,6 +212,8 @@ nav{
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 1px;
+    margin-top: 10px;
+    display: block;
 }
 
 /* Habit section */
@@ -226,7 +231,6 @@ nav{
     width:872.43px;
     height: 159.6px;
     text-align: center;
-
 }
 .habit-title h1{
     color: rgb(255, 255, 255);
@@ -243,14 +247,14 @@ nav{
 }
 .to-do{
     width: 100%;
-    height: 364.42px;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
 }
 .to-do >div{
     width: 307.23px;
-    height: 364.42px;
+    height: auto;
     text-align: center;
 }
 .to-do>div>img{
@@ -276,14 +280,13 @@ nav{
 .mile-container{
     margin: 0 auto;
     width: 80%;
-    height: 493.43px;
+    height: auto;
+    padding: 30px 32px 30px 50px;
     border-radius: 18px;
     background: rgb(34, 34, 34);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-    margin-bottom: 100px;
 }
 .mile-description{
     width: 589.1px;
@@ -292,8 +295,6 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    position: absolute;
-    left: 80px;
 }
 .mile-description h1{
     color: rgb(255, 255, 255);
@@ -321,13 +322,10 @@ nav{
     font-size: 24px;
     font-weight: 600;
 }
-.mile-img>img{
-    position: absolute;
+.running-img{
     width: 486.78px;
     height: 414.96px;
     border-radius: 18px;
-    top: 43px;
-    right: 43px;
     object-fit: none;
     object-position: 70% 25%;
 }
@@ -335,9 +333,10 @@ nav{
 
 .trainig-exercises{
     width: 80%;
-    height: 772.73px;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 88px;
+    margin-top: 50px;
 }
 .training-title{
     text-align: left;
@@ -473,7 +472,7 @@ nav{
     width: 892.43px;
     height: 159.6px;
     margin: 0 auto;
-    margin-bottom: 88px;
+    margin-bottom: 30px;
 }
 .bmi-title h1{
     color: rgb(255, 255, 255);
@@ -492,7 +491,6 @@ nav{
     letter-spacing: 0.3px;
     text-align: left;
 }
-
 .bmi-chart-calculator{
     width: 100%;
     height: 647.71px;
@@ -511,20 +509,20 @@ nav{
     gap: 100px;
 }
 .bmi-chart{
-    width: 412.3px;
-    height: 513.38px;
+    width: auto;
+    height: auto;
+    text-align: center;
 }
-.bmi-chart h1{
+.bmi-h1{
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 37.24px;
     font-weight: 900;
     line-height: 120%;
     letter-spacing: 0%;
-    text-align: left;
     margin-bottom: 52px ;
 }
-table,td,th{
+.bmi-chart table,td,th{
     border: 2px solid rgba(255, 255, 255, 0.1);
     border-collapse: collapse;
     padding: 15px 18px;
@@ -534,10 +532,9 @@ table,td,th{
     font-weight: 500;
     line-height: 120%;
     letter-spacing: 0%;
-    text-align: left;
 }
 table{
-    width: 412.3px;
+    width: 100%;
     height: 287.28px;
 }
 td{
@@ -551,12 +548,12 @@ td{
 }
 .bmi-calculator{
     width: 767.41px;
-    height: 513.38px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.bmi-calculator h1{
+.bmi-cal-title h1{
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size:37.24px;
@@ -566,7 +563,7 @@ td{
     text-align: left;
     margin-bottom: 14px;
 }
-.bmi-calculator p{
+.bmi-cal-title p{
     color: rgba(255, 255, 255, 0.5);
     font-family: Inter;
     font-size: 18.62px;
@@ -576,15 +573,37 @@ td{
     text-align: left;
     margin-bottom: 30px;
 }
-.grid-input{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+.input-field{
     gap: 10px;
     margin-bottom: 38px;
+    width: 100%;
 }
-.grid-input input{
-    width: auto;
-    height: 63.84px;
+.input-row1{
+    display: flex;
+    gap: 10px;
+}
+.input-row1 input{
+    width: 50%;
+}
+.input-row2{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.input-row2 input{
+    width: 50%;
+}
+.input-row2 select{
+    width: 50%;
+}
+.input-row3{
+    margin-top: 10px;
+}
+.input-row3 select{
+    width: 100%;
+}
+input{
+    height: auto;
     border: none;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
@@ -592,18 +611,17 @@ td{
     color: rgb(255, 255, 255);
     font-family: Inter;
     font-size: 21.28px;
-    padding: 0px 40px 0px 20px;
+    padding: 20px 20px 20px 20px;
 }
-.grid-input input::placeholder{
+.input-field input::placeholder{
     color: rgba(255, 255, 255, 0.6);
     font-family: Inter;
     font-size: 21.28px;
     font: weight 400px; ;
     align-items: center;
 }
-.grid-input select{
-    width: auto;
-    height: 63.84px;
+select{
+    height: auto;
     border: none;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.1);
@@ -612,7 +630,7 @@ td{
     font-size: 21.28px;
     font-weight: 400;
     text-align: left;
-    padding: 0px 20px 0px 20px;
+    padding: 20px 20px 20px 20px;
 }
 select > option{
     background: rgba(0, 0, 0, 0.863);
@@ -620,10 +638,6 @@ select > option{
     font-family: Inter;
     font-size: 21.28px;
     font-weight: 400;
-}
-#activity{
-    grid-column-start: 1;
-    grid-column-end: 3;
 }
 .bmi-calculator button{
     width: 297.92px;
@@ -648,12 +662,10 @@ select > option{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 88px;
-    /* border: 1px solid blue; */
 }
 .team-title{
-    /* border: 1px solid blue; */
     width: auto;
-    height: 159.6px;
+    height: auto;
     text-align: center;
     margin-bottom: 58px;
 }
@@ -674,12 +686,10 @@ select > option{
     letter-spacing: 0.3px;
 }
 .team-members{
-    /* height: 803.32px; */
     height: auto;
     width: auto;
     border-radius: 18px;
     background: rgba(255, 255, 255, 0.1);
-    /* border: 1px solid blue; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 26px 26px;
@@ -693,7 +703,6 @@ select > option{
     position: relative;
     background-color: rgba(0, 0, 0, 0.209);
     background-blend-mode:overlay;
-    /* border: 1px solid blue; */
 }
 .trainers h4{
     color: rgb(255, 255, 255);
@@ -724,6 +733,7 @@ select > option{
     width: 80%;
     margin: 0 auto;
     margin-bottom: 100px;
+    margin-top: 50px;
 }
 .our-plans-container h1{
     color: rgb(255, 255, 255);
@@ -735,8 +745,13 @@ select > option{
     margin-bottom: 50px;
 }
 .our-plans{
+    height: auto;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    gap: 30px;
 }
 .premium-plan>ul{
     list-style-type: none;
@@ -746,26 +761,27 @@ select > option{
     padding-bottom: 107px;
 }
 .plans{
-    width: 330.47px;
-    height: 371.76px;
-    border: 4px solid rgba(255, 255, 255, 0.5);
+    width: 70%;
+    height: auto;
+    border: 5px solid rgba(255, 255, 255, 0.5);
     border-radius: 10px;
     padding: 30px;
     list-style-type: none;
+    margin: 0 auto;
 }
 .plans>ul{
     list-style-type: none;
 }
 fieldset{
-    width: 330.47px;
-    height: 381.76px;
-    border: 4px solid rgb(230, 83, 60);
+    width: 75%;
+    height: auto;
+    border: 5px solid rgb(226, 97, 77);
     border-radius: 10px;
     padding: 30px;
     text-align: left;
     margin-top: -13px;
     padding-top: 20px;
-    padding-bottom: 43px;
+    padding-bottom: 30px;
 }
 legend{
     background-color: rgb(230, 83, 60);
@@ -829,14 +845,10 @@ legend{
     border: none;
 }
 
-
-
-
-
 /* Footer Section */
 footer{
     width: 100%;
-    height: 575.37px;
+    height: auto;
     background: rgba(255, 255, 255, 0.1);
 }
 .footer-section{
@@ -847,15 +859,15 @@ footer{
 }
 .footer-container{
     width: 100%;
-    height: 331.17px;
+    height: auto;
     margin-bottom: 79px;
     display: flex;
     justify-content: space-between;
     align-items: start;
 }
 .footer-fitness{
-    width: 589.19px;
-    height: 234.08px;
+    max-width: 500px;
+    height: auto;
 }
 .footer-fitness h3{
     color: rgb(230, 83, 60);
@@ -902,7 +914,6 @@ footer{
 }
 .reserved{
     width: 100%;
-    /* height: 127.68px; */
     height: auto;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
@@ -915,4 +926,165 @@ footer{
     letter-spacing: 0.3px;
     text-align: center;
     padding: 36px 0px;
+}
+
+/* Responsive for mobile */
+
+@media screen and (max-width:600px) {
+    header,
+    .to-do,
+     .mile-container,
+     .bmi-chart-calculator{
+        height: auto;
+    }
+    nav{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .nav-opt{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu-icon i{
+        font-size: 30px;
+    }
+    .hero-container,
+    .to-do,
+    .trainig-exercises,
+    .chart-calculator-container,
+    .footer-container
+    {
+        flex-direction: column;
+        width: 95%;
+        gap: 20px;
+    }
+    .hero-txt{
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .hero-txt h1,
+    .habit-title h1,
+    .mile-description h1,
+    .training-title h1,
+    .bmi-title h1{
+        font-size: 48.88px;
+    }
+    .shape{
+        font-size: 97.76px;
+    }
+    .club{
+        display: none;
+    }
+    .hero-buttons{
+        justify-content: space-around;
+    }
+    .download{
+        padding: 0px 10px 0px 10px;
+    }
+    .hero-img{
+        left: 0;
+    }
+    .watch-count-2{
+        font-size: 40px;
+    }
+    .workout-vdo{
+        padding: 16px 20px;
+        top: 65px;
+        right: 25px;
+    }
+    .workout-video{
+        font-size: 13px;
+        margin-top: 2px;
+    }
+    .vdo-tutorial{
+        padding: 15px 17px;
+        top: 350px;
+        left: 17px;
+    }
+    .watch-count{
+        font-size: 24 px;
+    }
+    .tutorial{
+        font-size: 16px;
+    }
+    .habit-title{
+        height: auto;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .mile-container{
+        padding: 33px 35px;
+        height: auto;
+        flex-direction: column;
+        margin-top: 1350px;
+        position: relative;
+    }
+    .mile-description{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .mile-description button,
+    .bmi-calculator button{
+        width: 100%;
+    }
+    .running-img{
+        width: 100%;
+        height: 226.1px;
+        object-fit: cover;
+    }
+    .training-title{
+        width: auto;
+    }
+    .img2{
+        background-position:70% 10%;
+    }
+    .img3{
+        display: none;
+    }
+    .img4{
+        background-position: 40%;
+    }
+    .img6{
+        display: none;
+    }
+    .row-1{
+        grid-template-columns: 1fr 1fr;
+        height: 200px;
+    }
+    .row-2{
+        grid-template-columns: 0.80fr 1fr;
+        height: 200px;
+    }
+    .bmi-title{
+        width: auto;
+    }
+    .bmi-chart{
+        margin-top: 30px;
+        width: 90%;
+    }
+    .bmi-calculator{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .team-title{
+        margin-bottom: 30px;
+    }
+    .team-members{
+        grid-template-columns: 1fr;
+    }
+    .our-plans-container{
+        width: 90%;
+        height: auto;
+        margin-top: 1650px;
+    }
+    .our-plans{
+        flex-direction: column;
+    }
+    .footer-fitness{
+        max-width: 100%;
+    }
 }

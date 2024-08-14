@@ -11,7 +11,7 @@
     <header>
         <nav>
             <div class="nav-logo">
-                    <em><h4>Fitness</h4></em>
+                    <h1>Fitness</h1>
             </div>
             <div class="nav-opt">
                     <p><span class="home">Home</span></p>
@@ -19,15 +19,16 @@
                     <p>Contact</p>
                     <p class="about">About</p>
             </div>
+            <div class="menu-icon"><i class="fa-solid fa-bars"></i></div>
         </nav>
         <section class="hero-section">
             <div class="hero-container">
                 <div class="hero-txt">
-                    <h1>Get body in <span class="shape">shape</span> & stay healthy</h1>
+                    <h1>Get body in <br><span class="shape">shape</span> & stay <br>healthy</h1>
                     <p>A huge selection of health and fitness content,healthy recipes and transformation stories to help you get fit and stay fit!
                     </p>
                     <div class="hero-buttons">
-                        <button class="join">Join Club Now!</button>
+                        <button class="join">Join <span class="club">Club</span> Now!</button>
                         <button class="download">Download App</button>
                     </div>
                 </div>
@@ -36,13 +37,11 @@
                         <dib class="circle-play"><i class="fa-solid fa-circle-play"></i></dib>
                         <div class="vdo-description">
                             <span class="watch-count">350+</span>
-                            <br>
                             <span class="tutorial">Video tutorial</span>
                         </div>
                     </button>
                     <button class="workout-vdo">
                         <span class="watch-count-2">500+</span>
-                        <br>
                         <span class="workout-video">Free Workout Videos</span>
                     </button>
                 </div>
@@ -75,7 +74,7 @@
                     <div class="weightloss">
                         <img src="images/image 5.png" alt="">
                         <h1>Weight Loss</h1>
-                        <p>focus on eating a balanced diet. Include a variety of nutrient-rich foods such as fruits, vegetables etc.</p>
+                        <p>focus on eating a balanced diet. Include a variety of nutrient-rich foods such as fruits, vegetables.</p>
                     </div>
                 </div>
             </div>
@@ -87,12 +86,10 @@
                     <p>Ordinary runs happen on ordinary paths. But the extra mile? That's where you transcend the mundane. It's where you become the protagonist of your own running saga.</p>
                     <button>Join Now</button>
                 </div>
-                <div class="mile-img">
-                    <img src="images/runing.jpg" alt="">
-                </div>
+                <img src="images/runing.jpg" alt="" class="running-img">
             </div>
         </section>
-        <section class="trainig-exercises">
+        <section class="trainig-exercises" >
             <div class="training-title">
                 <h1>Trainings and Exercises</h1>
                 <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
@@ -120,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section class="BMI-section">
+        <section class="BMI-section" >
             <div class="bmi-title">
                 <h1>BMI Calculator</h1>
                 <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
@@ -128,7 +125,7 @@
             <div class="bmi-chart-calculator">
                 <div class="chart-calculator-container">
                     <div class="bmi-chart">
-                        <h1>BMI Calculator Chart</h1>
+                        <h1 class="bmi-h1">BMI Calculator Chart</h1>
                         <table>
                             <tr>
                                 <th>BMI</th>
@@ -153,32 +150,40 @@
                         </table>
                     </div>
                     <div class="bmi-calculator">
-                        <h1>Calculate your BMI</h1>
-                        <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
-                        <div class="grid-input">
-                            <input type="number" placeholder="Height/cm" >
-                            <input type="number" placeholder="Weight/kg">
-                            <input type="number" placeholder="Age">
+                        <div class="bmi-cal-title">
+                            <h1 class="bmi-h1">Calculate your BMI</h1>
+                            <p>We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+                        </div>
+                        <div class="input-field">
+                            <div class="input-row1">
+                                <input type="number" placeholder="Height/cm" >
+                                <input type="number" placeholder="Weight/kg">
+                            </div>
+                            <div class="input-row2">
+                                <input type="number" placeholder="Age">
                             <select name="gender" id="gender">
                                 <option class="otn" value="Sex" disabled selected hidden>Sex</option>
                                 <option class="otn" value="Male">Male</option>
                                 <option class="otn" value="Female">Female</option>
                                 <option class="otn" value="Others">Others</option>
                             </select>
-                            <select name="" id="activity">
-                                <option class="otn" value="" disabled selected hidden>Select an activity factor</option>
-                                <option class="otn" value="">Little to No Exercise</option>
-                                <option class="otn" value="">Light Exercise 1-3 Days/Week</option>
-                                <option class="otn" value="">Moderate Exercise 3-5 Days/Week</option>
-                                <option class="otn" value="">Hard Exercise Every Day or Exercising Twice a Day</option>
-                            </select>
+                            </div>
+                            <div class="input-row3">
+                                <select name="" id="activity">
+                                    <option class="otn" value="" disabled selected hidden>Select an activity factor</option>
+                                    <option class="otn" value="">Little to No Exercise</option>
+                                    <option class="otn" value="">Light Exercise 1-3 Days/Week</option>
+                                    <option class="otn" value="">Moderate Exercise 3-5 Days/Week</option>
+                                    <option class="otn" value="">Hard Exercise Every Day or Exercising Twice a Day</option>
+                                </select>
+                            </div>
                         </div>
                         <button>Calculate</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="Our-Team-section">
+        <section class="Our-Team-section" >
             <div class="team-container">
                 <div class="team-title">
                 <h1>Meet Our Team</h1>
@@ -263,7 +268,7 @@
         </section>
     </main>
     <footer>
-        <div class="footer-section">
+        <div class="footer-section" >
             <div class="footer-container">
                 <div class="footer-fitness">
                     <h3><em>Fitness</em></h3>
